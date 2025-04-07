@@ -6,7 +6,7 @@ body {
     padding: 5px 160px;
     min-height: 100vh;
     font-family: "Noto Sans", sans-serif;
-    overflow: hidden;
+    overflow: hidden; /* Tirar sobras */
 }
 
 body::before {
@@ -25,7 +25,7 @@ body::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centralizar */
     color: black;
     font-size: 150px;
     font-weight: bold;
@@ -36,7 +36,7 @@ body::after {
     width: 80px;
     z-index: 1;
     position: relative;
-    margin: 20px
+    margin: 10px 5px
 }
 
 h4 {
@@ -71,6 +71,13 @@ p {
 .imagem-tenis {
     width: 600px;
     transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: 1s;
+}
+
+.troca-efeito{
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
 }
 
 .caixa-principal {
